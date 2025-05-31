@@ -36,7 +36,7 @@ def call_agentforce(msg: Message):
 
     try:
         response = requests.post(
-            f"{instance_url}/services/apexrest/agentforce",
+            f"{instance_url}",
             headers=headers,
             json={"message": msg.message}
         )
