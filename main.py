@@ -28,8 +28,6 @@ def call_agentforce(
     msg: Message,
     authorization: str = Header(None)  # This allows Bearer tokens to be accepted
 ):
-    if authorization != "Bearer agentforce-password":
-        raise HTTPException(status_code=403, detail="Invalid token")
 
     message = msg.message
 
