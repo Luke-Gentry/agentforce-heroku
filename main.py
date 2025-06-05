@@ -60,7 +60,7 @@ def plugin_manifest():
         "schema_version": "v1",
         "name_for_human": "Agentforce Connector",
         "name_for_model": "agentforce_connector",
-        "description_for_model": "Send natural language CRM requests to Salesforce's Agentforce, including retrieving events and meetings for accounts.",
+        "description_for_model": "Send natural language CRM requests to Salesforce's Agentforce, including retrieving events and meetings for accounts. Also, it can handle things related to Salesforce's accounts, contacts, and opportunities. Use this tool when the user asks about any of these salesforce objects.",
         "auth": { "type": "none" },
         "api": {
             "type": "openapi",
